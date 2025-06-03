@@ -1,0 +1,30 @@
+/* 1. Pull in all of Tailwind v4’s layers */
+@import "tailwindcss";
+
+/* 2. Your own base variables/resets */
+@import "./base.css";
+
+/* 3. Your custom global rules */
+#app {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  font-weight: normal;
+}
+
+/* 4. Any media queries or other rules */
+
+/* 5. Inject your brand-blue utilities into Tailwind’s utility layer */
+@layer utilities {
+  .bg-logo-blue { 
+    --tw-bg-opacity: 1;
+    background-color: #0083F0 !important; 
+  }
+  .hover\:bg-logo-blue-dark:hover { 
+    --tw-bg-opacity: 1;
+    background-color: #0016A8 !important; 
+  }
+  .focus\:ring-logo-blue:focus {
+    --tw-ring-color: #0083F0;
+  }
+}

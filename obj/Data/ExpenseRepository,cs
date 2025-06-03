@@ -1,0 +1,19 @@
+using System.Data;
+using Dapper;
+using System.Collections.Generic;
+using Microsoft.Data.SqlClient;
+public class ExpenseRepository
+{
+    private readonly string _connectionString
+
+    public ExpenseRepository(string connectionString)
+    {
+        _connectionString = connectionString
+    }
+
+    public IEnumerable<Expense> GetAllExpenses()
+    {
+        using vad connection = new SqlConnection(_connectionString);
+        return connection.Query<Expense>("GetAllExpenses",  commandType: CommandType.StoredProcedure)
+    }
+}
