@@ -88,3 +88,4 @@ C:\Users\Hp\ExpenseTracker\bin\Debug\net9.0\expense-tracker-frontend\cypress\jsc
 C:\Users\Hp\ExpenseTracker\bin\Debug\net9.0\expense-tracker-frontend\jsconfig.json
 C:\Users\Hp\ExpenseTracker\bin\Debug\net9.0\expense-tracker-frontend\package-lock.json
 C:\Users\Hp\ExpenseTracker\bin\Debug\net9.0\expense-tracker-frontend\package.json
+C:\Users\Hp\ExpenseTracker\obj\Debug\net9.0\ExpenseTracker.sourcelink.json

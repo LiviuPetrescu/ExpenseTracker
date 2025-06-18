@@ -7,9 +7,6 @@ using System.Globalization;
 using ExpenseTracker.ViewModels;
 
 
-
-
-
 namespace ExpenseTracker.Controllers
 {
     [ApiController]
@@ -65,15 +62,12 @@ namespace ExpenseTracker.Controllers
     }
 }
 
-
-        
    
         [HttpPost]
         public async Task<IActionResult> Post([FromBody] ExpenseInputViewModel expenseInput)
         {
             try
             {
-                // Map ViewModel to Expense entity
                 var expense = new Expense
                 {
                     Title = expenseInput.Title,
@@ -93,8 +87,6 @@ namespace ExpenseTracker.Controllers
         }
 
         
-  
-
         [HttpPut("{id}")]
         public async Task<IActionResult> UpdateExpense(int id, [FromBody] Expense expense)
         {

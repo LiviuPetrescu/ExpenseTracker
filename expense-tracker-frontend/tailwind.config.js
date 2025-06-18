@@ -17,7 +17,7 @@ export default {
         heading:         'var(--color-heading)',
         text:            'var(--color-text)',
 
-        // dark‐mode variables (prefixed “dark:” in your templates)
+        // dark‐mode variables 
         'background-dark':      'var(--color-background)',
         'background-soft-dark': 'var(--color-background-soft)',
         'border-dark':          'var(--color-border)',

@@ -57,10 +57,6 @@ namespace ExpenseTracker.Data
 }
 
 
-
-
-
-
         public async Task AddExpenseAsync(Expense expense)
         {
             using var connection = new SqlConnection(_configuration.GetConnectionString("DefaultConnection"));
@@ -98,7 +94,5 @@ namespace ExpenseTracker.Data
 
         }
     };
-
-
 
 }
